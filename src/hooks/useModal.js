@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const useModal = (initialMode = false) => {
+export function useModal (initialMode = false) {
 
     const [show, setShow] = useState(initialMode);
 

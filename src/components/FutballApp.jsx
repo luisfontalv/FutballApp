@@ -75,7 +75,7 @@ const FutballApp = () => {
                 />
             }
             <div className="col-md-12 text-center">
-                <h1 className="titlePlayer">Players Soccer</h1>
+                <h1 className="titlePlayer animate__animated animate__fadeInDown">Players Soccer</h1>
             </div>
             <div className="col-md-12 my-2 d-flex justify-content-end">
                 <Button className="btn-success mx-4"
@@ -86,7 +86,7 @@ const FutballApp = () => {
             </div>
             <div className="m-3 row">
                 {loading ? 
-                    <Spinner />
+                    <h1 className='animate__animated animate__flash titlePlayer'>Cargando...</h1>
                     :
                     players.map((item,index) => (
                         <CardPlayer

@@ -5,7 +5,7 @@ import { generateMean } from '../helpers/generateMean';
 const CardPlayer = ({data, functionDelete, functionEdit}) => {
 
     return (
-        <div className='cardPlayer mx-2'>
+        <div className='cardPlayer mx-2 animate__animated animate__fadeInDown'>
             <div className='cardPlayerHeader pt-2 '>
                 <Col className='text-center'>
                     <h3><b>{data.name}</b></h3>

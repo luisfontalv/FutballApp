@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Button, Spinner } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 import CardPlayer from "./CardPlayer";
 import ModalAddPlayer from "./ModalAddPlayer";
 import { getPlayers, deletePlayer, insertPlayer, updatePlayer } from "../helpers/api";
-import { toast } from "react-toastify";
+import { useModal } from "../hooks/useModal";
 
 const FutballApp = () => {
 
     const [players, setPlayers] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [show, setShow] = useState(false);
     const [dataUpdate, setDataUpdate] = useState({});
 
-    /* const { players, loading } = useApiPlayers(); */
+    const [show, toogle] = useModal();
 
     useEffect(() => {
         getPlayer();
     },[])
-
-    const toogle = () => setShow(!show);
 
     const getPlayer = () => {
         setPlayers([]);

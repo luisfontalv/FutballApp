@@ -1,3 +1,28 @@
 body {
     background-color: #020e41;
 }
+
+.cardPlayer {
+    background-color: #FAFAFA;
+    height: 20rem;
+    width: 15rem;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 3px;
+}
+
+.cardPlayer:hover {
+    background-color: #FAFAFA;
+}
+
+.cardPlayerHeader {
+    background-color: rgb(221, 220, 220);
+    width: 90%;
+    height: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.titlePlayer {
+    color: #FAFAFA;
+}

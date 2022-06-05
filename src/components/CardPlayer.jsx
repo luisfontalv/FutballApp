@@ -5,7 +5,7 @@ import { generateMean } from '../helpers/generateMean';
 const CardPlayer = ({data, functionDelete, functionEdit}) => {
 
     return (
-        <div className='cardPlayer mx-2 animate__animated animate__fadeInDown'>
+        <div className='cardPlayer my-2 mx-2 animate__animated animate__fadeInDown'>
             <div className='cardPlayerHeader pt-2 '>
                 <Col className='text-center'>
                     <h3><b>{data.name}</b></h3>
@@ -41,13 +41,13 @@ const CardPlayer = ({data, functionDelete, functionEdit}) => {
                 </Col>
             </Row>
             <Row className='col-md-12 mx-1 d-flex justify-content-center mt-1'>
-                <Button className='btn btn-sm col-md-4 mx-1 btn-success'
+                <Button className='btn btn-sm col-sm-5 col-md-4 mx-1 btn-success'
                     onClick={() => functionEdit(data)}
                 >
                     Editar
                 </Button>
                 <Button 
-                    className='btn btn-sm col-md-4 mx-1 btn-danger' 
+                    className='btn btn-sm col-sm-5 col-md-4 mx-1 btn-danger' 
                     onClick={() => functionDelete(data.id)}
                 >
                     Eliminar
